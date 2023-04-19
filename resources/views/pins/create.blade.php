@@ -31,7 +31,11 @@
                               Categorie
                             </label>
                             <select class="border border-gray-400 p-2 rounded-lg w-full" type="text" id="category" name="category">
-                                <option value=""></option>
+                                <option value="">
+                                name</option>
+                                <option value="">slug
+                                </option>
+
                                 @foreach($categories as $category)
                                     <optgroup label="{{$category->name}}">
                                         @foreach($category->subcategories as $sub)

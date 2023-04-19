@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('pin_meta', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('pin_id')->references('id')->on('pins')->onDelete('cascade');
+            $table->foreignId('pin_id')->references('id')->on('pins')->onDelete('cascade')->nullable();
             $table->string('school_name')->nullable();
             $table->string('school_location')->nullable();
             $table->date('datum_gebruikname')->nullable();
